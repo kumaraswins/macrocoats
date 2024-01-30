@@ -1,6 +1,6 @@
 site:
-  name: Tecco
-  site: 'https://tecco.in'
+  name: MacroCoats
+  site: 'https://MacroCoats.in'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Tecco
-    template: '%s — Tecco'
+    default: MacroCoats
+    template: '%s — MacroCoats'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Tecco
+    site_name: MacroCoats
     images:
       - url: '~/assets/images/default.png'
         width: 1200
