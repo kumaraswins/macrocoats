@@ -1,19 +1,13 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-
+import Brands from '~/components/widgets/Brands.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
 const metadata = {
-  title: 'Technical Electroless Chemical Company Private Limited',
+  title: 'Macro Coats Private Limited',
   ignoreTitleTemplate: true,
 };
 ---
@@ -240,7 +234,7 @@ const metadata = {
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Our Major customers"
     subtitle=""
     tagline=""
@@ -275,7 +269,66 @@ const metadata = {
         image :"https://raw.githubusercontent.com/kumaraswins/macrocoats/master/src/assets/images/goldsun.png"
       }
     ]}
-  >
+  > -->
+  <Brands
+    title="Our Customers"
+    subtitle="We have built a strong relationship and customer success"
+    icons={[]}
+    images={[
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Indian_Railways.svg/636px-Indian_Railways.svg.png',
+        alt: 'Indian Railways',
+        link:"https://www.indianrail.gov.in/"
+      },
+      
+      {
+        src: 'https://raw.githubusercontent.com/kumaraswins/macrocoats/master/src/assets/images/lt.png',
+        alt: 'L&T',
+        link:"https://www.larsentoubro.com/"
+      },
+      {
+        src: 'https://static.vecteezy.com/system/resources/previews/020/336/393/original/tvs-logo-tvs-icon-transparent-png-free-vector.jpg',
+        alt: 'TVS',
+        link:"https://www.tvsmotor.com/"
+      },
+      {
+        src: 'https://raw.githubusercontent.com/kumaraswins/macrocoats/master/src/assets/images/lmw.png',
+        alt: 'LMW',
+        link:"https://www.lmwglobal.com/"
+      },
+      {
+        src: 'https://raw.githubusercontent.com/kumaraswins/macrocoats/master/src/assets/images/rane.png',
+        alt: 'Rane',
+        link:"https://ranegroup.com/"
+      },
+      {
+        src: 'https://goldsun.in/wp-content/uploads/2021/07/G-S-LOGO-2.png',
+        alt: 'Goldsun',
+        link:"https://goldsun.in/"
+      },
+     
+      
+      {
+        src: 'https://rajagencypune.com/wp-content/uploads/2017/04/Audco-India-Ltd.png',
+        alt: 'Audco India',
+        link:"https://www.globalvalves.in/"
+      },
+      
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Chemplast_Sanmar.jpg',
+        alt: 'Chemplast Sanmar',
+        link:"http://www.sanmargroup.com/"
+      },
+      {
+        src: 'https://bsahercules.com/wp-content/uploads/2016/02/TI_Murugappa_Logo_Retina.png',
+        alt: 'TI cycles',
+        link:"https://tiindia.com/ti-cycles-of-india/"
+      },
+      
+      
+      
+    ]}
+  />
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
@@ -338,6 +391,29 @@ const metadata = {
   />
 
   <!-- CallToAction Widget *********** -->
+
+  <Steps2
+  slot="bg"
+    title="Reach out to us"
+    subtitle="Have questions? Feel free to contact us using the form below. We're here to help!"
+    callToAction={{
+      text: 'Contact us',
+      href: '/',
+    }}
+    items={[
+      {
+        title: 'Email us',
+        description: 'tecco1993@gmail.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Call us',
+        description: '+1 (234) 567-890',
+        icon: 'tabler:headset',
+      },
+
+    ]}
+  />
 
   
 </Layout>

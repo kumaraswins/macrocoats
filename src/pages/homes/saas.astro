@@ -21,18 +21,7 @@ const metadata = {
   <Fragment slot="header">
     <Header
       {...headerData}
-      actions={[
-        {
-          type: 'ghost',
-          text: 'Login',
-          href: '#',
-        },
-        {
-          type: 'primary',
-          text: 'Sign Up',
-          href: '#',
-        },
-      ]}
+      actions={[]}
       isSticky
     />
   </Fragment>
@@ -40,26 +29,23 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="SaaS Web Demo"
-    callToAction={{ targetBlank: true, text: 'Get Started', href: 'https://github.com/onwidget/astrowind' }}
+    tagline="Phosphating"
+    
     callToAction2={{ text: 'Learn more', href: '#features' }}
     image={{
-      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'AstroWind Hero Image',
+      src: 'https://kluthe.com/media/image/13/b0/e0/KTL_600x600@2x.jpg',
+      //src: 'https://engmag.in/wp-content/uploads/2019/06/The-Process-3.jpg',
+      alt: 'Phosphating',
     }}
   >
     <Fragment slot="title">
-      Simplify web design with Astrowind: <br /> your ultimate <span class="text-accent dark:text-white highlight"
-        >SaaS</span
-      > companion<br />
+      <span class="text-accent dark:text-white highlight">Low temperature: Phosphating
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Elevate your website creation process with <span class="font-semibold">AstroWind</span>'s SaaS solutions.</span
-      >
-       Seamlessly blend the power of Astro 3.0 and Tailwind CSS to craft websites that resonate with your brand and
-      audience.
+        Achieving a competitive edge in industrial processes involves adopting cutting-edge practices, particularly in metal surface treatment. The implementation of low-temperature zinc and manganese phosphating techniques offers significant advantages. These environmentally friendly methods not only contribute to energy conservation but also minimise sludge production, aligning with sustainable practices. Specifically designed for structural bridges and rail wagons, low-temperature manganese phosphating enhances the durability and corrosion resistance of these critical infrastructure components.
+
     </Fragment>
   </Hero2>
 
@@ -67,60 +53,64 @@ const metadata = {
 
   <Features
     id="features"
-    title="Why choose AstroWind?"
-    subtitle="Each of the following features enhances AstroWind's value proposition."
+    title="Why Low temperature?"
+    subtitle="Each of the following features enhances  value proposition."
     columns={2}
     items={[
       {
-        title: 'Integration of Astro 3.0 and Tailwind CSS',
+        title: 'Lower (e.g., 30-60°C)',
         description:
-          'Offers a powerful combination that enhances both the development process and the end-user experience. Also, allows to build dynamic and visually stunning websites with optimized performance.',
+          'Resulting in lower energy consumption.Sludge Formation: Reduced sludge formation, contributing to a lower environmental impact.',
         icon: 'tabler:layers-union',
       },
+      
       {
-        title: 'Versatile design for startups, small businesses, and more',
-        description: `Easily customize AstroWind to harmonize with the unique branding and identity of your venture. AstroWind's versatile design adapts to suit your needs.`,
-        icon: 'tabler:artboard',
-      },
-      {
-        title: 'Effortless customization for portfolios and marketing sites',
+        title: 'Industry Applications',
         description:
-          'With intuitive customization, easily showcase portfolio pieces, case studies, project highlights, and relevant content. Ideal for creative professionals and businesses looking to highlight their expertise.',
+          'Widely applicable across diverse industries, chosen for environmental benefits and compatibility with sensitive materials.',
         icon: 'tabler:writing',
       },
       {
-        title: 'Optimized landing pages and engaging blogs',
-        description: `Landing pages are strategically designed to captivate visitors and prompt specific actions. Additionally, the blog creation feature empowers sharing insights, engaging the audience.`,
+        title: 'Environmental Impact',
+        description: `Lower environmental impact with reduced energy consumption and sludge formation`,
         icon: 'tabler:podium',
       },
       {
-        title: 'Fast loading times and production-ready code',
-        description: `Using Astro 3.0 ensures fast loading and seamless rendering, enhancing browsing. The code follows best practices, improving user experience, SEO, and reducing bounce rates.`,
+        title: 'Sludge',
+        description: `Reduced sludge formation, contributing to a lower environmental impact.`,
         icon: 'tabler:rocket',
       },
-      {
-        title: 'SEO-optimized structure for enhanced visibility',
-        description: `Follows SEO best practices with clean code, semantic HTML markup, and fast loading, enhancing search engine rankings. AstroWind's SEO structure ensures visibility to potential customers and clients.`,
-        icon: 'tabler:eyeglass',
-      },
+      
     ]}
   />
 
   <!-- Content Widget **************** -->
-
+  
   <Content
-    title="Use cases"
-    subtitle="Discover how AstroWind's versatile template serves as the ideal solution for various use cases, providing tailored solutions to drive success."
+    title="Statistics"
+    subtitle="It offers several advantages in industrial processes compared to traditional phosphating methods conducted at higher temperatures."
     isReversed
     items={[
       {
-        title: 'Description:',
+        title: 'Market Growth:',
         description:
-          'Are you a startup with big dreams? AstroWind propels your success. Our template forges a seamless online presence, attracting investors and customers from day one. Astro 3.0 and Tailwind CSS ensure striking, responsive sites, leaving lasting impressions. Countless startups leverage AstroWind to kickstart their journey and resonate with audiences.',
+          'Growing demand for environmentally friendly and energy-efficient metal surface treatments, including low-temperature phosphating.',
       },
       {
-        title: 'Benefits:',
-        description: `Allow startups to quickly create professional websites without investing extensive time and resources. <br /> Make a memorable first impression with visually appealing design elements that highlight your startup's unique value proposition. <br /> Ensures your website looks stunning and works well on all devices. <br /> Engage potential investors and customers with engaging content, clear messaging, and intuitive navigation.`,
+        title: 'Adoption Rate',
+        description: `Increasing adoption across industries, particularly in automotive, aerospace, and construction.`,
+      },
+      {
+        title: 'Environmental Impact',
+        description: `Companies are increasingly prioritizing low-temperature options for reduced energy consumption and minimized waste generation.`,
+      },
+      {
+        title: 'Industry Segments',
+        description: `Applications in structural bridges, rail wagons, and various metal components where corrosion resistance is critical.`,
+      },
+      {
+        title: 'Energy Savings',
+        description: `Low-temperature phosphating processes contribute to energy savings compared to high-temperature alternatives.`,
       },
     ]}
     image={{
@@ -130,7 +120,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Startup success stories: <br /><span class="text-2xl">Launching with AstroWind</span>
+        Some key benefits include 
       </h3>
     </Fragment>
 
@@ -145,22 +135,30 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'Description:',
-        description: `For SaaS businesses, user experience is key. AstroWind enhances showcasing SaaS solutions intuitively. The template's Astro 3.0 and Tailwind CSS integration guarantees user-friendly experience, mirroring your software's efficiency. Customize pages to communicate SaaS value and solutions for your audience.`,
+        title: 'Corrosion Resistance:',
+        description: `Passivation enhances the corrosion resistance of metal surfaces, forming a protective oxide layer that helps prevent rust and corrosion.`,
       },
       {
-        title: 'Benefits:',
-        description: `Ensuring a cohesive and user-centric design for your SaaS website. <br /> Effectively communicate complex SaaS features through visual aids, animations, and interactive elements. <br /> Prioritize user needs and pain points through well-structured layouts and clear navigation. <br /> Encourage visitors to take action with strategically placed CTAs. <br /> Ensures your SaaS website works seamlessly across all devices.`,
+        title: 'Improved Surface Finish:',
+        description: `The passivation process contributes to an improved surface finish, removing contaminants and oxides to create a smoother and more aesthetically appealing surface.`,
+      },
+      {
+        title: 'Extended Service Life:',
+        description: `By providing a protective barrier against corrosion, passivation helps extend the service life of metal components, reducing the need for frequent replacements`,
+      },
+      {
+        title: 'Chemical Inertness:',
+        description: `Passivated surfaces exhibit increased chemical inertness, making them less reactive to environmental factors and enhancing their stability in various applications.`,
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1531973486364-5fa64260d75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1658&q=80',
+      src: 'https://www.reliance-foundry.com/wp-content/uploads/passivated-stainless-steel.jpg',
       alt: 'SaaS Businesses Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        SaaS showcase: <br /><span class="text-2xl">Streamlining user experience</span>
+        Passivation 
       </h3>
     </Fragment>
 
@@ -170,28 +168,34 @@ const metadata = {
   </Content>
 
   <!-- Content Widget **************** -->
+  
 
   <Content
     isReversed
     isAfterContent={true}
     items={[
       {
-        title: 'Description:',
-        description: `Your portfolio is your masterpiece, and AstroWind is your canvas. Whether you're a designer, photographer, artist, or any other creative professional, AstroWind empowers you to showcase your work with elegance and sophistication. Tailored to highlight your creative projects, AstroWind's templates offer a visually immersive experience that lets your portfolio shine.`,
+        title: 'Enhanced Wear Resistance:',
+        description: `Manganese phosphate coatings contribute to increased wear resistance on metal surfaces, making them more durable and suitable for applications with high friction and mechanical stress.`,
       },
       {
-        title: 'Benefits:',
-        description: `Serve as a captivating backdrop to showcase your creative work, capturing attention and leaving a lasting impression. <br /> Tailor your portfolio to reflect your unique style and artistic vision. <br /> Prioritizes visuals, allowing you to present your work in high-resolution detail that draws viewers into your creations. <br /> Enables seamless navigation for effortless portfolio exploration.`,
+        title: 'Corrosion Protection:',
+        description: `The coating provides effective corrosion protection, forming a phosphate layer that acts as a barrier against environmental elements and helps prevent rust and corrosion.`,
       },
+      {
+        title: 'Surface Lubrication:',
+        description: ` Manganese phosphate coatings can serve as an effective base for lubricants, promoting improved surface lubrication and reducing friction in applications such as sliding and rotating components.`,
+      },
+      
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: 'https://crestchemicals.com/assets/images/manganese-phosphate.jpg',
       alt: 'Portfolio Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Creative portfolios: <br /><span class="text-2xl">Highlighting your work</span>
+        Manganese Phosphate: 
       </h3>
     </Fragment>
 
@@ -205,22 +209,27 @@ const metadata = {
   <Content
     items={[
       {
-        title: 'Description:',
-        description: `For small businesses, a well-crafted website can be a game-changer. AstroWind empowers small businesses to not only establish a credible online presence but also convert visitors into loyal customers. The template's thoughtful design and optimization features ensure that your website doesn't just attract attention but also guides visitors through a seamless journey, ultimately leading to conversions.`,
+        title: 'Corrosion Resistance::',
+        description: `Provide a protective layer on metal surfaces, enhancing corrosion resistance by acting as a barrier against environmental factors, preventing rust and degradation.`,
       },
       {
-        title: 'Benefits:',
-        description: `Present your small business with a professional and polished website that instills confidence and trust among visitors. <br /> Strategically placed CTAs, user-friendly forms, and optimized layouts work together to drive user engagement and conversions. <br /> Ensure a smooth browsing experience, reducing bounce rates and encouraging interaction.`,
+        title: 'Paint Adhesion:',
+        description: `Iron phosphate coatings serve as an excellent base for paint adhesion, promoting better bonding between the substrate and the paint layer, resulting in improved coating durability and longevity.`,
       },
+      {
+        title: 'Environmentally Friendly:',
+        description: `Iron phosphate coatings are often considered environmentally friendly, as the process typically involves fewer hazardous materials compared to some alternative coating methods, aligning with sustainability and regulatory considerations.`,
+      },
+      
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Small Business Image',
+      src: 'http://www.ilve.com.tr/images/foto/urunler/demir-fosfat-b2.jpg',
+      alt: 'Iron Phospahting',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Small business growth: <br /><span class="text-2xl">Converting visitors into customers</span>
+        Iron Phospahte: 
       </h3>
     </Fragment>
 
@@ -229,78 +238,112 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Pricing Widget ******************* -->
-
-  <Pricing
-    title="Flexible pricing plans"
-    prices={[
-      {
-        title: 'free',
-        subtitle: 'Access to core features and a wide range of templates',
-        price: '0',
-        period: '/ month',
-        callToAction: {
-          targetBlank: true,
-          text: 'Get Started for Free',
-          href: '#',
-        },
-      },
-      {
-        title: 'pro',
-        subtitle: 'Premium templates and advanced customization',
-        price: 15,
-        period: '/ Month',
-        callToAction: {
-          targetBlank: true,
-          text: 'Upgrade to Pro',
-          href: '#',
-        },
-        hasRibbon: true,
-        ribbonTitle: 'popular',
-      },
-      {
-        title: 'Enterprise',
-        subtitle: 'Tailored solutions for large-scale projects',
-        price: 45,
-        period: '/ Month',
-        callToAction: {
-          targetBlank: true,
-          text: 'Unlock Enterprise Features',
-          href: '#',
-        },
-      },
-    ]}
-  />
-
-  <!-- FAQs Widget ******************* -->
-
-  <FAQs
-    title="Frequently Asked Questions"
+  <Content
+    isReversed
+    isAfterContent={true}
     items={[
       {
-        title: 'Is AstroWind compatible with the latest versions of Astro and Tailwind CSS?',
-        description:
-          'Yes, AstroWind is designed to be compatible with the latest versions of both Astro and Tailwind CSS. This ensures that you can harness the full capabilities of these technologies while benefiting from the features offered by AstroWind.',
-        icon: 'tabler:chevrons-right',
+        title: 'Enhanced Lubrication:',
+        description: `Zinc phosphate coatings can contribute to improved lubrication properties, making them suitable for applications involving moving parts by reducing friction and wear on the coated surfaces.`,
       },
       {
-        title: 'Can I use AstroWind for both personal and commercial projects?',
-        description: `Certainly! AstroWind is versatile and can be used for a wide range of projects, including both personal and commercial endeavors. Whether you're building a professional portfolio, launching a startup, or creating a marketing website, AstroWind has you covered.`,
-        icon: 'tabler:chevrons-right',
+        title: 'Paint Adhesion:',
+        description: `Zinc phosphate coatings provide an ideal surface for paint adhesion, enhancing the bond between the substrate and paint layers. This results in improved coating durability and resistance to chipping and peeling.`,
       },
       {
-        title: 'What level of coding knowledge is required to use AstroWind?',
-        description:
-          'While some familiarity with HTML, CSS, and web development concepts is helpful, the user-friendly interface and customization options allow those with limited coding experience to create impressive websites. For more advanced users, AstroWind offers extensive customization capabilities.',
-        icon: 'tabler:chevrons-right',
+        title: 'Corrosion Protection:',
+        description: `Zinc phosphate coatings offer excellent corrosion protection by forming a durable and adherent layer on metal surfaces, acting as a barrier against moisture and environmental elements.`,
       },
-      {
-        title: 'Is customer support available for AstroWind users seeking guidance?',
-        description: `Absolutely, our dedicated customer support team is here to assist you with any questions or challenges you may encounter. Feel free to reach out to us through our support channels, and we'll be happy to provide the help you need.`,
-        icon: 'tabler:chevrons-right',
-      },
+      
     ]}
+    image={{
+      src: 'https://www.ckpinc.com/Page/19/CssImgServlet?id=1208',
+      alt: 'Portfolio Image',
+    }}
   >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Zinc Phosphate: 
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    items={[
+      {
+        title: 'Scale and Oxide Removal:',
+        description: `Acid pickling is highly effective in removing scales, oxides, and other impurities from metal surfaces, ensuring a clean substrate for subsequent processing or coating applications.`,
+      },
+      {
+        title: 'Surface Preparation:',
+        description: `Acid pickling provides excellent surface preparation by etching the metal surface, promoting better adhesion of coatings such as paint or plating, resulting in enhanced coating durability.`,
+      },
+      {
+        title: 'Material Restoration:',
+        description: `Acid pickling can be used for the restoration of metal components, removing corrosion, rust, and other contaminants, thereby extending the service life of the treated materials.`,
+      },
+      
+    ]}
+    image={{
+      src: 'https://www.worldironsteel.com/Content/upload/201749951/201709221600345512220.jpg',
+      alt: 'Acid Pickling',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Acid Pickling: 
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
+
+  <!-- Pricing Widget ******************* -->
+<Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Oil and Grease Removal:',
+        description: `Degreasing effectively eliminates oils, greases, and other contaminants from surfaces, ensuring a clean substrate for subsequent processes like coating, bonding, or machining.`,
+      },
+      {
+        title: 'Improved Adhesion:',
+        description: `By removing oily residues, degreasing enhances the adhesion of coatings, adhesives, and other materials to the treated surface, promoting stronger and more reliable bonds.`,
+      },
+      {
+        title: 'Prevents Surface Defects:',
+        description: `Degreasing plays a crucial role in preventing surface defects such as fisheyes or uneven coatings, ensuring a smooth and uniform finish in various industrial applications.`,
+      },
+      
+    ]}
+    image={{
+      src: 'https://www.chemours.com/en/-/media/images/corporate/vertrel/pd/clouseup-of-metal-gear-sitting-on-container-or-tub-1-4-1.jpg',
+      alt: 'Portfolio Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Degreasing: 
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+  
+  <!-- FAQs Widget ******************* -->
+
+  
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
@@ -336,13 +379,5 @@ const metadata = {
 
   <!-- BlogLatestPost Widget **************** -->
 
-  <BlogLatestPosts
-    id="blog"
-    title="Stay informed with AstroWind's blog"
-    information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using AstroWind effectively for your projects.`}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </BlogLatestPosts>
+  
 </Layout>

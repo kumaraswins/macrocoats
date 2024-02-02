@@ -110,10 +110,10 @@ export const headerData = {
     //     },
     //   ],
     // },
-    // {
-    //   text: 'Widgets',
-    //   href: '#',
-    // },
+    {
+      text: 'Services',
+      href: getPermalink('/homes/saas'),
+    },
   ],
   actions: [],
 };
