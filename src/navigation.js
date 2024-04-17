@@ -114,6 +114,18 @@ export const headerData = {
       text: 'Services',
       href: getPermalink('/homes/saas'),
     },
+    {
+      text: 'Iron Phosphate',
+      href: getPermalink('/homes/iron'),
+    },
+    {
+      text: 'Manganese Phosphate',
+      href: getPermalink('/homes/manganese'),
+    },
+    {
+      text: 'Zinc Phosphate',
+      href: getPermalink('/homes/zinc'),
+    },
   ],
   actions: [],
 };
